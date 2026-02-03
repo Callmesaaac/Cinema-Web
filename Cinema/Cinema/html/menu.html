@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Aserrí</title>
+    <link rel="shortcut icon" href="/img/logo cinema serri.jpeg">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="contenedor">
+
+       <header>
+          <nav class="navbar">
+              <div class="logo">
+                  <img src="/img/logo cinema serri.jpeg" alt="Cinema Aserrí"><span id="cine"onclick="alert('Estas en el Inicio')">Cinema Aserrí</span>
+              </div>
+              <ul class="navbar">
+                  <li><a href="#cartelera">Cartelera</a></li>
+                  <li><a href="#dulceria">Dulceria</a></li>
+                  <li><a href="/html/tickets.html">Tickets</a></li>
+                  <li><a href="#salas">Salas</a></li>
+                  <li><a href="#nosotros">Nosotros</a></li>
+                  <li><a href="#eventos">Eventos</a></li>
+                  <li><a href="#contacto">Contactanos</a></li>
+                  <li><a href="/html/login.html">Registro</a></li>
+
+              </ul>
+              <div class="search-bar">
+                <input type="text" id="search-input" place holder="Buscar pelicula...">
+                <button onclick="searchMovie()">Buscar</button> 
+              </div>
+          </nav>
+          <marquee onmouseenter="alert('Spider-man')">
+            <img src="/img/spidermanmarquee1.jpg" alt="spiderman1">
+            <img src="/img/spidermanmarquee2.jpg" alt="spiderman2">
+             ¡Proximamente! Spider-man: Across the Spiderverse part 2
+            <img src="/img/spidermanmarquee3.jpg" alt="spiderman3">
+            <img src="/img/spidermanmarquee4.jpg">
+          </marquee>
+      </header>
+       <div class="carousel">
+         <div class="carousel-container">
+             <div class="carousel-slide"><img src="/img/dunebanner.jpg" alt="pelicula1"></div>
+             <div class="carousel-slide"><img src="/img/spiderbanner.jpg" alt="pelicula2"></div>
+             <div claas="carousel-slide"><img src="/img/bannerstarwars.png" alt="pelicula3"></div>
+             <div class="carousel-slide"><img src="/img/starwars.jpg" alt="pelicula4"></div>
+             <div class="carousel-slide"><img src="/img/topgun.jpg" alt="pelicula5"></div>
+         </div>
+         <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+         <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+
+        <section class="sections-grid">
+            <div class="cartelera">
+                 <div class="section-label">Cartelera</div>
+                 <div class="Movies">
+                     <a href="#cartelera"><img src="/img/fightclub.jpg" height="300px" width="250" alt="cartelera" onmousedown="alert('Fight Club')"></a>
+                    <a href="#cartelera"><img src="/img/spiderman.jpg" height="300px" width="250" alt="cartelera" onmousedown="alert('Spiderman')"></a>
+                    <a href="#cartelera"><img src="/img/starwars.jpg" height="300px" width="250" alt="cartelera" onmousedown="alert('Star Wars')"></a>
+                    <a href="#cartelera"><img src="/img/topgun.jpg" height="300px" width="250" alt="cartelera" onmousedown="alert('Top Gun')"></a>
+                 </div>
+                 <div class="Movies">
+                    <a href="#cartelera"><img src="/img/taxi driver.jpg" height="300px" width="250" alt="cartelera" onmousedown="alert('Taxi Driver')"></a>
+                    <a href="#cartelera"><img src="/img/backtothefuture.jpg" height="300px" width="250" alt="cartelera" onmousedown="alert('Volver al Futuro')"></a>
+                    <a href="#cartelera"><img src="/img/endgame.jpg" height="300px" width="250" alt="cartelera" onmousedown="alert('Avengers: End Game')"></a>
+                    <a href="#cartelera"><img src="/img/fear.jpg" height="300px" width="250" alt="cartelera" onmousedown="alert('Fear Street II')"></a>
+                 </div>
+                 
+            </div>
+            <div class="dulceria">
+                <div class="section-label">Dulceria</div>
+                <a href="#dulceria"><img src="" alt="Dulceria"></a>
+            </div>
+            <div class="salas">
+                <div class="section-label">Salas</div>
+                    <a href="#salas">
+                        <video width="100%" height="500px" controls>
+                                <source src="" type="">
+                        </video>
+                    </a>
+          </div>
+          <div class="eventos">
+                <div class="section-label">Eventos</div>
+                <a href="#eventos"><img src="" alt="Eventos"></a>
+          </div>
+        </section>
+
+    </div>
+ <script src="/js/script.js"></script>
+</body>
+</html>
